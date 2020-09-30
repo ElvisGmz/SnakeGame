@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #24242c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  max-width: 300px;
+}
+
+#labelDown {
+  color: #000;
+  margin: 0;
+  text-align: center;
+  font-weight: 900;
+}
+
+.screenGame {
+  padding: 10px;
+  background-color: greenyellow;
+}
+
+canvas {
+  background-color: greenyellow;
+  border: 1px solid #000;
+}
