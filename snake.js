@@ -1,4 +1,4 @@
-(function () {
+
   const game = document.querySelector("#snakeGame");
   const pointsView = document.querySelector("#score");
   const labelDown = document.querySelector("#labelDown");
@@ -17,7 +17,7 @@
     right: 4,
   };
 
-  const FPS = 1000 / 15;
+  const FPS = 1000 / 10;
 
   let direction = DIRECTIONS.right;
   let headPosX = 10,
@@ -187,11 +187,11 @@
     watchColisions();
   }
 
+  let gameInterval = setInterval(gameLoop, FPS);
+  
   function gameOver() {
     clearInterval(gameInterval);
     ctx.font = "16px Arial";
     labelDown.innerHTML = "Game Over! Your Score: " + points;
   }
 
-  let gameInterval = setInterval(gameLoop, FPS);
-})();
