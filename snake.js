@@ -103,7 +103,7 @@
   }
 
   function watchColisions() {
-    if (headPosX <= 0 || headPosY <= 0 || headPosX >= 300 || headPosY >= 300) {
+    if (headPosX < 0 || headPosY < 0 || headPosX > 300 || headPosY > 300) {
       gameOver();
     }
 
