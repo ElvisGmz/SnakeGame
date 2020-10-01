@@ -5,6 +5,11 @@
   pointsView.innerHTML = 0;
   const ctx = game.getContext("2d");
 
+  const btnUp = document.querySelector('#btnUp')
+  const btnLeft = document.querySelector('#btnLeft')
+  const btnRight = document.querySelector('#btnRight')
+  const btnDown = document.querySelector('#btnDown')
+
   const DIRECTIONS = {
     up: 1,
     down: 2,
@@ -129,6 +134,29 @@
       direction = DIRECTIONS.right;
     }
   });
+
+
+  btnUp.addEventListener('click', (e) => {
+    if(direction !== DIRECTIONS.down){
+      direction = DIRECTIONS.up
+    }
+  })
+  btnLeft.addEventListener('click', (e) => {
+    if(direction !== DIRECTIONS.right){
+      direction = DIRECTIONS.left
+    }
+  })
+  btnRight.addEventListener('click', (e) => {
+    if(direction !== DIRECTIONS.left){
+      direction = DIRECTIONS.right
+    }
+  })
+  btnDown.addEventListener('click', (e) => {
+    if(direction !== DIRECTIONS.up){
+      direction = DIRECTIONS.down
+    }
+  })
+
 
   function createFood() {
     let min = Math.ceil(0);

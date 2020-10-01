@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="theme-color" content="#24242C" />
-    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="theme-color" content="#24242C"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon"/>
   </head>
   <body>
     <h3>Snake Game | ElvisGmz</h3>
@@ -14,10 +15,34 @@
       <canvas id="snakeGame" width="310" height="310"></canvas>
       <p id="labelDown">Your score: <span id="score"></span></p>
     </div>
-    <p>
-      Usa las flechas de tu teclado para jugar y recarga la pagina para jugar de
-      nuevo
-    </p>
+    <div class="buttons">
+      <table>
+        <tr>
+          <td></td>
+          <td>
+            <button id="btnUp"><i class="fas fa-arrow-up"></i></button>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btnLeft"><i class="fas fa-arrow-left"></i></button>
+          </td>
+          <td></td>
+          <td>
+            <button id="btnRight"><i class="fas fa-arrow-right"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button id="btnDown"><i class="fas fa-arrow-down"></i></button>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <p>Usa las flechas de tu teclado para jugar o los botones tactiles.</p>
     <script src="snake.js"></script>
   </body>
 </html>

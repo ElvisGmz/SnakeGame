@@ -6,6 +6,7 @@ html(lang="es")
         title Snake Game
         link(rel="stylesheet", href="style.css")
         meta(name="theme-color" content="#24242C")
+        script(src="https://kit.fontawesome.com/a076d05399.js")
         link(rel="shortcut icon" href="./icon.svg" type="image/x-icon")
     body
         h3 Snake Game | ElvisGmz
@@ -13,5 +14,27 @@ html(lang="es")
             canvas#snakeGame(width='310', height='310')
             p#labelDown Your score: 
                 span#score
-        p Usa las flechas de tu teclado para jugar y recarga la pagina para jugar de nuevo
+        div.buttons
+            table
+                tr
+                    td
+                    td
+                        button(id='btnUp')
+                            i(class='fas fa-arrow-up')
+                    td
+                tr
+                    td
+                        button(id='btnLeft')
+                            i(class='fas fa-arrow-left')
+                    td
+                    td
+                        button(id='btnRight')
+                            i(class='fas fa-arrow-right')
+                tr
+                    td
+                    td
+                        button(id='btnDown')
+                            i(class='fas fa-arrow-down')
+                    td
+        p Usa las flechas de tu teclado para jugar o los botones tactiles.
         script(src="snake.js")
